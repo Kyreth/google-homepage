@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Tangerine">
+        <style>
+
+            html, body {
+                height: 100%;
+                width: 100%;
+                font-family: "NotoSans";
+
+            }
+
+            header {
+                border-color: red;
+                border-width: 9px; 
+                border-style: solid;
+            }
+
+            .container {
+                position: relative;
+                border-color: blue;
+                border-width: 5px; 
+                border-style: solid;
+                height: 90%;
+            }
+
+            .main-set {
+                position: relative;
+                top: 180px;
+                border-color: rgb(0, 255, 64);
+                border-width: 5px; 
+                border-style: solid;
+                height: 35%;
+                width: 50%;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+
+            #search-bar {
+                position: relative;
+                top: 20px;
+                background-image:url("images/outline_search_black_24dp.png");
+                background-position-y: center;
+                background-position-x: 5px;
+                background-repeat: no-repeat;
+                border-width: 1px;
+                opacity: 60%;
+                padding-left: 30px;
+                width: 600px;
+                height: 30px;
+                border-color: rgb(161, 161, 161);
+                border-radius: 15px;
+            }
+
+            button {
+                position: relative;
+                border: none;
+                color: rgb(100, 100, 100);
+                background-color: transparent;
+                font-size: 0.9em;
+                top: 40px;
+                height: 30px;
+                width: 145px;
+                padding: 10px;
+                line-height: 5px;
+            }
+
+            button:hover {
+                background-color: rgb(255, 255, 255);
+                border-width: 0.5px;
+                border-style: solid;
+                border-color: rgb(218, 218, 218);
+                border-radius: 5px;
+            }
+
+            .main-set p{
+                position: relative;
+                bottom: -90px;
+                color: black;
+                font-size: 0.9em;
+            }
+
+            .main-set p a {
+                color: blue;
+                text-decoration: none;
+            }
+
+            a {
+                color:black;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>        
+            <a href="#">About</a>
+            <a href="#">Store</a>
+        </header>
+
+        <div class="container">
+            <div class="main-set">
+                <img src="images/googlelogo_color_272x92dp.png" alt="Google Logo">
+                <div class="search-set">
+                    <form>
+                        <label for="name"></label>
+                        <input id="search-bar" type="text" name="search">
+                        <button id="google-search" type="submit">Google Search</button>
+                        <button id="lucky" type="submit">I'm Feeling Lucky</button>
+                    </form>
+                </div>
+
+                <p>Google offered in: <a href="#">Francais</a></p>
+            </div>
+        </div>
+    </body>
+
+</html>
